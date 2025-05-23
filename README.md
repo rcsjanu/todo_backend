@@ -24,10 +24,9 @@ src/
 ├── middlewares/        # Authentication middleware
 ├── models/             # Mongoose models
 ├── routes/             # Route definitions
-├── types/              # Custom TypeScript interfaces
-├── cron/               # CRON job logic
+├── jobs/               # CRON job logic
 ├── config/             # DB connection config
-└── index.ts            # Entry point
+└── server.ts           # Entry point
 ```
 
 ---
@@ -93,7 +92,7 @@ npm run dev
 
 All routes below require an `Authorization` header:
 ```
-Bearer <token>
+<token>
 ```
 
 #### `GET /api/todos/all` — Get all user todos  
